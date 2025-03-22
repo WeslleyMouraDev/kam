@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upsell 2 - Chamadinha Exclusiva</title>
+    <script
+      src="../../cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-subids=""
+      async=""
+      defer=""
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+      body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: white;
+        color: black;
+        text-align: center;
+        position: relative;
+      }
+
+      .top-message {
+        background-color: #00aff0;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .progress-bar {
+        background-color: #f0f0f0;
+        height: 15px;
+        width: 80%;
+        margin: 20px auto;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .progress-bar div {
+        width: 100%;
+        height: 100%;
+        background-color: #00aff0;
+        border-radius: 5px;
+      }
+
+      .content-container {
+        margin: 20px auto;
+        width: 86vw; /* 90% da largura da tela */
+        max-width: 600px; /* Limite máximo para telas maiores */
+        background: #f9f9f9;
+        border: 3px dashed #00aff0;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.2);
+      }
+
+      .content-container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .highlight-text {
+        color: #00aff0;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .buttons {
+        margin-top: 20px;
+      }
+
+      .button {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 15px 30px;
+        margin: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        background-color: #00aff0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        animation: pulse 2s infinite;
+      }
+
+      .button:hover {
+        transform: scale(1.05);
+        background-color: #008fcc;
+      }
+
+      .button.red {
+        background-color: #ff0000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        animation: none;
+      }
+
+      .button.red:hover {
+        background-color: #cc0000;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          background-color: #00aff0;
+        }
+        50% {
+          transform: scale(1.05);
+          background-color: #008fcc;
+        }
+      }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '1183194870026761');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1183194870026761&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div class="top-message">
+      Quase lá! Sua compra está quase concluída... Não feche ou atualize essa
+      página.
+    </div>
+
+    <div class="progress-bar">
+      <div></div>
+    </div>
+
+    <div class="content-container">
+      <h2>Chamadinha Exclusiva Comigo <span style="color: red">🔞</span></h2>
+      <img src="images/chamada.jpg" alt="Chamadinha de Vídeo" />
+      <p>
+        Quer ter meu número do WhatsApp privado e poder me ligar pra quem sabe
+        rs... <br />
+        Somente <span class="highlight-text">10 vagas</span> disponíveis, meus
+        amores!
+      </p>
+
+      <p class="highlight-text">06 VAGAS AINDA DISPONÍVEIS</p>
+      <p>
+        <strike>R$ 77,90</strike>
+        <span style="color: #00aff0; font-size: 24px">R$ 29,90</span>
+      </p>
+
+      <div class="buttons">
+        <a
+          href="https://go.zippify.com.br/wm7kl?document=88048772000&phone=21999999999"
+          class="button"
+          >Quero fazer uma chamadinha de vídeo com você 😈🫦🤤</a
+        >
+        <a href="../acesso/index.html" class="button red"
+          >Quero perder a chamada com você 😢</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

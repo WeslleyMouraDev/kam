@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Oferta - Kamylinha Santos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <script>
+      // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
+      const link = 'index.html';
+
+      function setBackRedirect(url) {
+        let urlBackRedirect = url;
+        urlBackRedirect = urlBackRedirect =
+          urlBackRedirect.trim() +
+          (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+          document.location.search.replace('?', '').toString();
+
+        history.pushState({}, '', location.href);
+        history.pushState({}, '', location.href);
+        history.pushState({}, '', location.href);
+
+        window.addEventListener('popstate', () => {
+          console.log('onpopstate', urlBackRedirect);
+          setTimeout(() => {
+            location.href = urlBackRedirect;
+          }, 1);
+        });
+      }
+
+      setBackRedirect(link);
+    </script>
+    <style>
+      /* Estilo geral da página */
+      body {
+        background-color: #f8f8f8; /* Fundo claro */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333; /* Texto principal */
+      }
+
+      /* Mensagem persuasiva no topo */
+      .promo-header {
+        background-color: #ff7b00; /* Laranja vibrante */
+        color: #fff; /* Texto branco */
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Container principal */
+      .container {
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff; /* Fundo branco */
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* Título principal */
+      .main-title {
+        font-size: 24px;
+        color: #ff7b00; /* Laranja vibrante */
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      /* Mensagem de oferta */
+      .offer-message {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      /* Seção de preço */
+      .price-section {
+        margin: 20px 0;
+      }
+
+      .price-section .original-price {
+        font-size: 16px;
+        color: #999;
+        text-decoration: line-through;
+      }
+
+      .price-section .discount-price {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ff7b00; /* Laranja vibrante */
+        margin-top: 5px;
+      }
+
+      /* Botão de compra */
+      .buy-button {
+        background-color: #ff7b00; /* Laranja vibrante */
+        color: #fff; /* Branco */
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 0 5px 10px rgba(255, 123, 0, 0.3);
+        transition: transform 0.3s, background-color 0.3s;
+
+        /* Adicionando animação */
+        animation: pulsar 2s infinite ease-in-out;
+      }
+
+      /* Definição da animação */
+      @keyframes pulsar {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1); /* Aumenta 10% */
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .buy-button:hover {
+        background-color: #e66900; /* Laranja mais escuro no hover */
+        transform: scale(1.05);
+      }
+
+      /* Nota adicional */
+      .additional-note {
+        font-size: 14px;
+        color: #777;
+        margin-top: 20px;
+        line-height: 1.5;
+      }
+
+      /* Estilo para a imagem */
+      .promo-image {
+        margin-top: 20px;
+        border-radius: 10px;
+        max-width: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '1183194870026761');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1183194870026761&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <div>
+      <!-- Mensagem de topo -->
+      <div class="promo-header">
+        Não saia ainda! Você Não Pode perder a Chance de me vê peladinha amor
+      </div>
+
+      <!-- Conteúdo principal -->
+      <div class="container">
+        <!-- Título -->
+        <h1 class="main-title">Oferta Exclusiva!</h1>
+
+        <!-- Mensagem de oferta -->
+        <p class="offer-message">
+          Essa Promoção vai sair do ar e você vai perder a oportunidade de vê
+          minha Pepekinha por 3 meses, aproveite agora e economize ainda mais!
+        </p>
+        <!-- Campo de imagem -->
+        <img
+          data-recalc-dims="1"
+          decoding="async"
+          src="images/Imagem-do-WhatsApp-de-2024-11-30-as-21.49.44_b533b11b.jpg"
+          alt="Imagem Promocional"
+          class="promo-image"
+        />
+        <!-- Preço -->
+        <div class="price-section">
+          <p class="original-price">De R$ 79.90</p>
+          <p class="discount-price">Por R$ 9,90</p>
+        </div>
+
+        <!-- Botão de compra -->
+        <a
+          href="https://go.zippify.com.br/lmpvogly8w?document=88048772000&phone=21999999999"
+          class="buy-button"
+          >APROVEITAR PROMOÇÃO</a
+        >
+
+        <!-- Nota adicional -->
+        <p class="additional-note">
+          Esta oferta é válida por tempo limitado. Garanta seu desconto antes
+          que seja tarde!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
